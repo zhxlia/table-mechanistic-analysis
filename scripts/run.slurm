@@ -11,7 +11,7 @@
 set -euo pipefail
 : "${PAPER_CODE_ROOT:?Export PAPER_CODE_ROOT as the absolute path to paper_code.}"
 source "$(conda info --base)/etc/profile.d/conda.sh"
-conda activate "${CONDA_ENV:-newmi}"
+conda activate "${CONDA_ENV:-table}"
 export OMP_NUM_THREADS="${SLURM_CPUS_PER_TASK:-4}"
 case "${1:-}" in
   synthetic) bash "$PAPER_CODE_ROOT/scripts/run_synthetic.sh" ;;

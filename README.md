@@ -1,13 +1,12 @@
 # Table-MI
 
-Main-text code for *How Do Language Models Understand Tables? A Mechanistic Analysis
-of Cell Location*. Appendix-only experiments are excluded.
+Code for *How Do Language Models Understand Tables? A Mechanistic Analysis of Cell Location*.
 
 ## Setup
 
 Use Linux, a compatible NVIDIA driver, and a GPU for model experiments. The main
 model is Qwen3-4B; the paper uses one A100 80 GB. Install with
-`conda env create -f environment.yml`, then `conda activate newmi`. If `newmi`
+`conda env create -f environment.yml`, then `conda activate table`. If `table`
 already exists, create a separate environment using `-n another-name` and export
 `CONDA_ENV=another-name` before submitting jobs.
 Model weights and HiTab data are external. Obtain the original HiTab dataset

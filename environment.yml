@@ -1,4 +1,4 @@
-name: newmi
+name: table
 channels:
   - conda-forge
 dependencies:
